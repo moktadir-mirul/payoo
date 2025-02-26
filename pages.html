@@ -22,13 +22,20 @@
                 Main Balance
               </h1>
               <h2 class="text-xl font-bold text-gray-700">
-                $ <span>5000</span>
+                $ <span id="main-balance">5000</span>
               </h2>
             </div>
           </div>
           <div>
             <button class="btn btn-primary bg-blue-700 hover:bg-blue-950 border-none shadow-none">Log Out</button>
           </div>
+        </div>
+        <hr>
+        <div class="p-2 my-5 space-y-3">
+          <h1 class="font-bold text-2xl text-gray-800">Welcome to Payoo</h1>
+          <p class="font-normal text-sm text-gray-700">
+            Enjoy easy and convenient financial services with us. Cashout charge is low and 
+          </p>
         </div>
         <!-- Box area -->
         <section class="p-2 grid grid-cols-3 gap-4">
@@ -43,23 +50,23 @@
           </div>
 
           <div class="p-4 bg-white text-lg font-bold text-center cursor-pointer border border-blue-500 hover:bg-green-200 hover:border-green-300 duration-300 rounded-lg">
-            <img class="w-10 mx-auto" src="images/money1.png" alt="money">
-            <h1>Add Money</h1>
+            <img class="w-10 mx-auto" src="images/send1.png" alt="money">
+            <h1>Transfer Money</h1>
           </div>
 
-          <div class="p-4 bg-white text-lg font-bold text-center cursor-pointer border border-blue-500 hover:bg-green-200 hover:border-green-300 duration-300">
-            <img class="w-10 mx-auto" src="images/money1.png" alt="money">
-            <h1>Add Money</h1>
+          <div class="p-4 bg-white text-lg font-bold text-center cursor-pointer border border-blue-500 hover:bg-green-200 hover:border-green-300 duration-300 rounded-lg">
+            <img class="w-10 mx-auto" src="images/bonus1.png" alt="money">
+            <h1>Get Bonus</h1>
           </div>
 
-          <div class="p-4 bg-white text-lg font-bold text-center cursor-pointer border border-blue-500 hover:bg-green-200 hover:border-green-300 duration-300">
-            <img class="w-10 mx-auto" src="images/money1.png" alt="money">
-            <h1>Add Money</h1>
+          <div class="p-4 bg-white text-lg font-bold text-center cursor-pointer border border-blue-500 hover:bg-green-200 hover:border-green-300 duration-300 rounded-lg">
+            <img class="w-10 mx-auto" src="images/transaction1.png" alt="money">
+            <h1>Pay Bill</h1>
           </div>
 
-          <div class="p-4 bg-white text-lg font-bold text-center cursor-pointer border border-blue-500 hover:bg-green-200 hover:border-green-300 duration-300">
-            <img class="w-10 mx-auto" src="images/money1.png" alt="money">
-            <h1>Add Money</h1>
+          <div class="p-4 bg-white text-lg font-bold text-center cursor-pointer border border-blue-500 hover:bg-green-200 hover:border-green-300 duration-300 rounded-lg">
+            <img class="w-10 mx-auto" src="images/wallet1.png" alt="money">
+            <h1>Transaction History</h1>
           </div>
 
         </section>
@@ -73,7 +80,7 @@
               <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
                 <form class="card-body">
                   <div class="form-control">
-                    <select class="select select-info w-full max-w-xs">
+                    <select class="select select-info w-full max-w-xs" required>
                       <option disabled selected>Bank Name</option>
                       <option value="Bkash">Bkash</option>
                       <option value="Nagad">Nagad</option>
@@ -83,6 +90,7 @@
                       <span class="label-text font-bold text-xl text-gray-900">Amount:</span>
                     </label>
                     <input
+                      id="add-amount"
                       type="number"
                       placeholder="Amount to be added"
                       class="input input-bordered"
@@ -94,6 +102,7 @@
                       <span class="label-text font-bold text-xl text-gray-800">Pin</span>
                     </label>
                     <input
+                      id="add-pin"
                       type="number"
                       value="1234"
                       placeholder="Enter your pin"
