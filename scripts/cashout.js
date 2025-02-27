@@ -21,7 +21,7 @@ document.getElementById("out-btn").addEventListener("click", function (event) {
       transactionHistory.classList.add("text-blue-700");
 
       transactionHistory.innerHTML = `
-    <h1 class="text--2xl">Cash Out to ${agentAcc}</h1>
+    <h1 class="text--2xl">Cash Out to <span class="text-blue-900 font-extrabold">${agentAcc}</span></h1>
     <p class="text-lg text-red-500">Amount = $${outAmount}</P>        
             `;
 
