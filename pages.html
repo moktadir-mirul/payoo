@@ -135,12 +135,19 @@
               <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
                 <form class="card-body">
                   <div class="form-control">
-                    <select class="select select-info w-full max-w-xs" required>
-                      <option disabled selected>Bank Name</option>
-                      <option value="Bkash">Bkash</option>
-                      <option value="Nagad">Nagad</option>
-                      <option value="Rocket">Rocket</option>
-                    </select>
+                    <label class="label">
+                      <span class="label-text font-semibold text-lg text-gray-900">Agent number
+                      </span>
+                    </label>
+                    <input
+                      id="agent-acc"
+                      type="number"
+                      placeholder="Enter agent number"
+                      class="input input-bordered"
+                      required
+                    />
+                  </div>
+                  <div class="form-control">
                     <label class="label">
                       <span class="label-text font-semibold text-lg text-gray-900">Amount</span>
                     </label>
@@ -179,6 +186,12 @@
           </div>
         </section>
         <!-- cash out area ends -->
+
+        <!-- Transaction history area starts -->
+        <h1 class="text-blue-700 text-center font-bold text-2xl">
+          Transaction History
+        </h1>
+        <!-- Transaction area ends -->
       </section>
     </main>
     <script src="scripts/toggle.js"></script>
