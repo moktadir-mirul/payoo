@@ -64,7 +64,7 @@
             <h1>Pay Bill</h1>
           </div>
 
-          <div class="p-4 bg-white text-lg font-bold text-center cursor-pointer border border-blue-500 hover:bg-green-200 hover:border-green-300 duration-300 rounded-lg">
+          <div id="history-box" class="p-4 bg-white text-lg font-bold text-center cursor-pointer border border-blue-500 hover:bg-green-200 hover:border-green-300 duration-300 rounded-lg">
             <img class="w-10 mx-auto" src="images/wallet1.png" alt="money">
             <h1>Transaction History</h1>
           </div>
@@ -188,9 +188,15 @@
         <!-- cash out area ends -->
 
         <!-- Transaction history area starts -->
-        <h1 class="text-blue-700 text-center font-bold text-2xl">
-          Transaction History
-        </h1>
+        <section id="history-area">
+          <h1 class="text-blue-700 text-center font-bold text-2xl">
+            Transaction History
+          </h1>
+          <div id="history-container" class="p-2 space-y-3">
+
+          </div>
+        </section>
+
         <!-- Transaction area ends -->
       </section>
     </main>
